@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */; };
+		277FDD72275287D1001A55E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD71275287D1001A55E7 /* ContentView.swift */; };
+		277FDD74275287D3001A55E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277FDD73275287D3001A55E7 /* Assets.xcassets */; };
+		277FDD77275287D3001A55E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277FDD76275287D3001A55E7 /* Preview Assets.xcassets */; };
+		277FDD8127528844001A55E7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8027528844001A55E7 /* GameModel.swift */; };
+		277FDD8327542BE2001A55E7 /* ScoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */; };
+		277FDD8527542F95001A55E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8427542F95001A55E7 /* Extensions.swift */; };
+		277FDD87275432C4001A55E7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD86275432C4001A55E7 /* LogoView.swift */; };
+		277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD882754362F001A55E7 /* MatchupRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		277FDD6C275287D1001A55E7 /* NFL Redzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Redzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_RedzoneApp.swift; sourceTree = "<group>"; };
+		277FDD71275287D1001A55E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		277FDD73275287D3001A55E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		277FDD76275287D3001A55E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		277FDD8027528844001A55E7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailView.swift; sourceTree = "<group>"; };
+		277FDD8427542F95001A55E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		277FDD86275432C4001A55E7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		277FDD882754362F001A55E7 /* MatchupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupRowView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277FDD69275287D1001A55E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277FDD63275287D1001A55E7 = {
+			isa = PBXGroup;
+			children = (
+				277FDD6E275287D1001A55E7 /* NFL Redzone */,
+				277FDD6D275287D1001A55E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		277FDD6D275287D1001A55E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD6C275287D1001A55E7 /* NFL Redzone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277FDD6E275287D1001A55E7 /* NFL Redzone */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD7D275287F5001A55E7 /* Views */,
+				277FDD7E275287F9001A55E7 /* Models */,
+				277FDD7F275287FE001A55E7 /* Utility */,
+				277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */,
+				277FDD73275287D3001A55E7 /* Assets.xcassets */,
+				277FDD75275287D3001A55E7 /* Preview Content */,
+			);
+			path = "NFL Redzone";
+			sourceTree = "<group>";
+		};
+		277FDD75275287D3001A55E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD76275287D3001A55E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		277FDD7D275287F5001A55E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD71275287D1001A55E7 /* ContentView.swift */,
+				277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */,
+				277FDD86275432C4001A55E7 /* LogoView.swift */,
+				277FDD882754362F001A55E7 /* MatchupRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		277FDD7E275287F9001A55E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD8027528844001A55E7 /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		277FDD7F275287FE001A55E7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				277FDD8427542F95001A55E7 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		277FDD6B275287D1001A55E7 /* NFL Redzone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277FDD7A275287D3001A55E7 /* Build configuration list for PBXNativeTarget "NFL Redzone" */;
+			buildPhases = (
+				277FDD68275287D1001A55E7 /* Sources */,
+				277FDD69275287D1001A55E7 /* Frameworks */,
+				277FDD6A275287D1001A55E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFL Redzone";
+			productName = "NFL Redzone";
+			productReference = 277FDD6C275287D1001A55E7 /* NFL Redzone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277FDD64275287D1001A55E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					277FDD6B275287D1001A55E7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 277FDD67275287D1001A55E7 /* Build configuration list for PBXProject "NFL Redzone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 277FDD63275287D1001A55E7;
+			productRefGroup = 277FDD6D275287D1001A55E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277FDD6B275287D1001A55E7 /* NFL Redzone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		277FDD6A275287D1001A55E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277FDD77275287D3001A55E7 /* Preview Assets.xcassets in Resources */,
+				277FDD74275287D3001A55E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277FDD68275287D1001A55E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277FDD8527542F95001A55E7 /* Extensions.swift in Sources */,
+				277FDD87275432C4001A55E7 /* LogoView.swift in Sources */,
+				277FDD72275287D1001A55E7 /* ContentView.swift in Sources */,
+				277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */,
+				277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */,
+				277FDD8327542BE2001A55E7 /* ScoreDetailView.swift in Sources */,
+				277FDD8127528844001A55E7 /* GameModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		277FDD78275287D3001A55E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		277FDD79275287D3001A55E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		277FDD7B275287D3001A55E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFL Redzone/Preview Content\"";
+				DEVELOPMENT_TEAM = Y2CV739CMW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stugreenham.NFL-Redzone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		277FDD7C275287D3001A55E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFL Redzone/Preview Content\"";
+				DEVELOPMENT_TEAM = Y2CV739CMW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stugreenham.NFL-Redzone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277FDD67275287D1001A55E7 /* Build configuration list for PBXProject "NFL Redzone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277FDD78275287D3001A55E7 /* Debug */,
+				277FDD79275287D3001A55E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277FDD7A275287D3001A55E7 /* Build configuration list for PBXNativeTarget "NFL Redzone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277FDD7B275287D3001A55E7 /* Debug */,
+				277FDD7C275287D3001A55E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277FDD64275287D1001A55E7 /* Project object */;
+}
