@@ -36,6 +36,7 @@ struct EventResponse: Codable, Hashable {
         }
 
             struct Competitor: Codable, Hashable {
+                var id: String // team id
                 var team: Team
                 var score: String
             }
@@ -55,6 +56,9 @@ struct EventResponse: Codable, Hashable {
                 var down: Int
                 var yardLine: Int
                 var distance: Int
+                var downDistanceText: String
+                var shortDownDistanceText: String
+                var possessionText: String
                 var isRedZone: Bool
                 var homeTimeouts: Int
                 var awayTimeouts: Int
@@ -77,10 +81,24 @@ struct EventResponse: Codable, Hashable {
         }
 
             struct Type: Codable, Hashable {
-                var description: String
+                var state: String // pre, in or post
+                var description: String // final or scheduled
             }
 
 
+
+/*
+ 
+ "yardLine": 11,
+ "distance": 24,
+ "downDistanceText": "3rd & 24 at DEN 11",
+ "shortDownDistanceText": "3rd & 24",
+ "possessionText": "DEN 11",
+ "isRedZone": false,
+ "homeTimeouts": 0,
+ "awayTimeouts": 1,
+ "possession": "7"
+ */
 
 
 /*

@@ -19,10 +19,10 @@ struct ScoreDetailView: View {
     var body: some View {
         
         Text(scoreData)
-            .frame(width: 34, height: 34, alignment: .center)
-            .background(Color(.black))
-            .foregroundColor(Color(.white))
-            .font(.system(size: 22, weight: .bold))
+//            .frame(width: 38, height: 38, alignment: .center)
+//            .background(Color(.black))
+//            .foregroundColor(Color(.white))
+//            .font(.system(size: 20, weight: .bold))
         
     }
 }
@@ -34,6 +34,6 @@ struct ScoreDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ScoreDetailView(scoreData: "30")
             .previewLayout(.sizeThatFits)
-            .padding()
+//            .padding()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274EB75527597BA000BB70EB /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EB75427597BA000BB70EB /* Functions.swift */; };
 		277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */; };
 		277FDD72275287D1001A55E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD71275287D1001A55E7 /* ContentView.swift */; };
 		277FDD74275287D3001A55E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277FDD73275287D3001A55E7 /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		277FDD8527542F95001A55E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8427542F95001A55E7 /* Extensions.swift */; };
 		277FDD87275432C4001A55E7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD86275432C4001A55E7 /* LogoView.swift */; };
 		277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD882754362F001A55E7 /* MatchupRowView.swift */; };
+		27C5B721275C22C1000F0873 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B720275C22C1000F0873 /* MatchDetailView.swift */; };
+		27E29D0E27709AD7003B630F /* example-events.json in Resources */ = {isa = PBXBuildFile; fileRef = 27E29D0D27709AD7003B630F /* example-events.json */; };
+		27E29D1027713FDE003B630F /* PossessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E29D0F27713FDE003B630F /* PossessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274EB75427597BA000BB70EB /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		277FDD6C275287D1001A55E7 /* NFL Redzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Redzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_RedzoneApp.swift; sourceTree = "<group>"; };
 		277FDD71275287D1001A55E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +34,10 @@
 		277FDD8427542F95001A55E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		277FDD86275432C4001A55E7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		277FDD882754362F001A55E7 /* MatchupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupRowView.swift; sourceTree = "<group>"; };
+		27C5B720275C22C1000F0873 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		27E29D09276FF25F003B630F /* NFL-Redzone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NFL-Redzone-Info.plist"; sourceTree = SOURCE_ROOT; };
+		27E29D0D27709AD7003B630F /* example-events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "example-events.json"; path = "../../../../../../Downloads/example-events.json"; sourceTree = "<group>"; };
+		27E29D0F27713FDE003B630F /* PossessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +70,13 @@
 		277FDD6E275287D1001A55E7 /* NFL Redzone */ = {
 			isa = PBXGroup;
 			children = (
+				27E29D09276FF25F003B630F /* NFL-Redzone-Info.plist */,
 				277FDD7D275287F5001A55E7 /* Views */,
 				277FDD7E275287F9001A55E7 /* Models */,
 				277FDD7F275287FE001A55E7 /* Utility */,
 				277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */,
 				277FDD73275287D3001A55E7 /* Assets.xcassets */,
+				27E29D0C27709A9A003B630F /* Data */,
 				277FDD75275287D3001A55E7 /* Preview Content */,
 			);
 			path = "NFL Redzone";
@@ -86,6 +97,8 @@
 				277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */,
 				277FDD86275432C4001A55E7 /* LogoView.swift */,
 				277FDD882754362F001A55E7 /* MatchupRowView.swift */,
+				27C5B720275C22C1000F0873 /* MatchDetailView.swift */,
+				27E29D0F27713FDE003B630F /* PossessionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,8 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				277FDD8427542F95001A55E7 /* Extensions.swift */,
+				274EB75427597BA000BB70EB /* Functions.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		27E29D0C27709A9A003B630F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27E29D0D27709AD7003B630F /* example-events.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277FDD77275287D3001A55E7 /* Preview Assets.xcassets in Resources */,
+				27E29D0E27709AD7003B630F /* example-events.json in Resources */,
 				277FDD74275287D3001A55E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				277FDD8527542F95001A55E7 /* Extensions.swift in Sources */,
+				27C5B721275C22C1000F0873 /* MatchDetailView.swift in Sources */,
 				277FDD87275432C4001A55E7 /* LogoView.swift in Sources */,
 				277FDD72275287D1001A55E7 /* ContentView.swift in Sources */,
+				27E29D1027713FDE003B630F /* PossessionView.swift in Sources */,
+				274EB75527597BA000BB70EB /* Functions.swift in Sources */,
 				277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */,
 				277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */,
 				277FDD8327542BE2001A55E7 /* ScoreDetailView.swift in Sources */,
@@ -316,11 +342,13 @@
 				DEVELOPMENT_TEAM = Y2CV739CMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFL-Redzone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,11 +373,13 @@
 				DEVELOPMENT_TEAM = Y2CV739CMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFL-Redzone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

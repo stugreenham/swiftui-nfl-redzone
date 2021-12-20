@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var games = [Event]()
     @State private var isError: Bool = false
     
+    // TOGGLE FOR MODAL SHEET
+    @State private var showingSheet = false
     
     
     //: MARK: - FUNCTIONS
@@ -29,13 +31,10 @@ struct ContentView: View {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
-            
                 do {
                     let decodedReponse = try JSONDecoder().decode(EventResponse.self, from: data)
 
                     DispatchQueue.main.async {
-//                        print("------- decodedResponse -------")
-//                        print(decodedReponse)
                         self.games = decodedReponse.events
                         self.isError = false
                     }
@@ -45,51 +44,65 @@ struct ContentView: View {
                     print(error)
                     self.isError = true
                 }
-                
             }
-            
             print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
         }.resume()
     }
     
     
+    //: MARK: - BODY
+    
     var body: some View {
         
         NavigationView {
             List {
-                ForEach(Array(games), id: \.self) { game in
+                ForEach(Array(games).sorted { $0.status.type.state < $1.status.type.state }, id: \.self) { game in
 
                     VStack(alignment: .leading) {
-                        
-                        
+                                                
                         MatchupRowView(
                             homeTeam: game.competitions[0].competitors[0],
-                            homeTeamColor: game.competitions[0].competitors[0].team.color,
                             awayTeam: game.competitions[0].competitors[1],
-                            awayTeamColor: game.competitions[0].competitors[1].team.color
+                            situation: game.competitions[0].situation ?? nil,
+                            clock: game.status.displayClock,
+                            period: game.status.period,
+                            downDistance: game.competitions[0].situation?.downDistanceText ?? game.status.type.description,
+                            redzone: getRedzoneStatus(
+                                gameStatus: game.status.type.description,
+                                isRedzone: game.competitions[0].situation?.isRedZone ?? false
+                            )
                         )
                         
+                        // Text(game.status.type.state)
+                        // Text(game.competitions[0].situation?.lastPlay.team.id ?? "N/A")
 
-                        Text("\(game.status.displayClock) in the \(game.status.period)")
-                            .font(.footnote)
-                        
-                        if(game.status.type.description == "In Progress") {
-                            if (game.competitions[0].situation!.isRedZone) {
-                                Text("Redzone")
-                                    .font(.footnote)
-                            }
-                        }
-
+                    } //: VSTACK
+                    .background(
+                        RoundedRectangle(cornerRadius: 8).fill(
+                            getRedzoneStatus(
+                                gameStatus: game.status.type.description,
+                                isRedzone: game.competitions[0].situation?.isRedZone ?? false
+                            ) ? Color.red : Color("cell-bg")
+                        )
+                    )
+                    .onTapGesture {
+                        showingSheet = true
                     }
-
-                }
-            }
+                    
+                } //: FOREACH
+                .listRowSeparator(.hidden)
+                .listRowInsets(.init(top: 8, leading: 8, bottom: 8, trailing: 8))
+            } //: LIST
+            .environment(\.defaultMinListRowHeight, 20) 
             .refreshable {
                 loadGameData()
             }
-            .navigationTitle("Redzone")
+            .navigationBarTitle("Redzone", displayMode: .inline)
             .listStyle(PlainListStyle())
             .onAppear(perform: loadGameData)
+            .sheet(isPresented: $showingSheet, content: {
+                MatchDetailView()
+            })
         }
 
     }
