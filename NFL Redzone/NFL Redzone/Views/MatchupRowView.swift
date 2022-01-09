@@ -16,6 +16,7 @@ struct MatchupRowView: View {
     var situation: Situation?
     var clock: String
     var period: Int
+    var clockPeriod: String
     var downDistance: String
     var redzone: Bool
     
@@ -34,7 +35,6 @@ struct MatchupRowView: View {
                 
                 // TEAM NAME
                 Text(awayTeam.team.shortDisplayName)
-                // Text("#\(awayTeam.team.id)")
                     
                 Spacer()
                 
@@ -44,7 +44,7 @@ struct MatchupRowView: View {
                 }
                 
                 // SCORE
-                ScoreDetailView(scoreData: awayTeam.score)
+                Text(awayTeam.score)
                 
             }
             .contentShape(Rectangle())
@@ -61,7 +61,6 @@ struct MatchupRowView: View {
                 
                 // TEAM NAME
                 Text(homeTeam.team.shortDisplayName)
-                // Text("#\(homeTeam.team.id)")
                 
                 Spacer()
                 
@@ -71,7 +70,7 @@ struct MatchupRowView: View {
                 }
                 
                 // SCORE
-                ScoreDetailView(scoreData: homeTeam.score)
+                Text(homeTeam.score)
                 
             }
             .contentShape(Rectangle())
@@ -89,7 +88,9 @@ struct MatchupRowView: View {
                 Spacer()
                 
                 // CLOCK / PERIOD
-                Text("\(clock) in the \(period)")
+                if(clockPeriod != "Final" && clockPeriod != "Halftime") {
+                    Text(clockPeriod)
+                }
                 
             }
             .font(.footnote)
@@ -148,6 +149,7 @@ struct MatchupRowView_Previews: PreviewProvider {
             ),
             clock: "15:00",
             period: 1,
+            clockPeriod: "10:17 - 1st",
             downDistance: "3rd & 24 at DEN 11",
             redzone: false
             )

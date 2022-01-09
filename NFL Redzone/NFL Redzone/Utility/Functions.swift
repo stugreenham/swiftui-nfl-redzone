@@ -17,8 +17,24 @@ func getRedzoneStatus(gameStatus: String, isRedzone: Bool) -> Bool {
     } else {
         return false
     }
+}
+
+func getGameFilter(gameFilter: Int, gamesLive: [Event], gamesCompleted: [Event], gamesScheduled: [Event]) -> [Event] {
+    var returnedEvents: [Event]
     
+    print("Filter: \(gameFilter)")
     
+    if (gameFilter == 1) { // pre
+        returnedEvents = gamesScheduled
+    } else if (gameFilter == 2) { // live
+        returnedEvents = gamesLive
+    } else if (gameFilter == 3) { // post
+        returnedEvents = gamesCompleted
+    } else {
+        returnedEvents = gamesLive
+    }
+    
+    return returnedEvents
 }
 
 func getColor(team: String) -> Color {

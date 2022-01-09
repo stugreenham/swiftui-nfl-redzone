@@ -24,8 +24,6 @@ struct LogoView: View {
             ProgressView()
         }
         .frame(width: 26, height: 26)
-//        .background(.white)
-//        .padding(.vertical, 4)
         
     }
 }
@@ -34,6 +32,5 @@ struct LogoView_Previews: PreviewProvider {
     static var previews: some View {
         LogoView(imageURL: "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png")
             .previewLayout(.sizeThatFits)
-//            .padding()
     }
 }

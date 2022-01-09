@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2731D18827737A8500146A3C /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731D18727737A8500146A3C /* TabMenuView.swift */; };
 		274EB75527597BA000BB70EB /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EB75427597BA000BB70EB /* Functions.swift */; };
 		277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */; };
 		277FDD72275287D1001A55E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD71275287D1001A55E7 /* ContentView.swift */; };
 		277FDD74275287D3001A55E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277FDD73275287D3001A55E7 /* Assets.xcassets */; };
 		277FDD77275287D3001A55E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277FDD76275287D3001A55E7 /* Preview Assets.xcassets */; };
 		277FDD8127528844001A55E7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8027528844001A55E7 /* GameModel.swift */; };
-		277FDD8327542BE2001A55E7 /* ScoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */; };
 		277FDD8527542F95001A55E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD8427542F95001A55E7 /* Extensions.swift */; };
 		277FDD87275432C4001A55E7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD86275432C4001A55E7 /* LogoView.swift */; };
 		277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277FDD882754362F001A55E7 /* MatchupRowView.swift */; };
-		27C5B721275C22C1000F0873 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B720275C22C1000F0873 /* MatchDetailView.swift */; };
+		27C5B721275C22C1000F0873 /* MatchupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B720275C22C1000F0873 /* MatchupDetailView.swift */; };
 		27E29D0E27709AD7003B630F /* example-events.json in Resources */ = {isa = PBXBuildFile; fileRef = 27E29D0D27709AD7003B630F /* example-events.json */; };
 		27E29D1027713FDE003B630F /* PossessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E29D0F27713FDE003B630F /* PossessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2731D18727737A8500146A3C /* TabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
 		274EB75427597BA000BB70EB /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		277FDD6C275287D1001A55E7 /* NFL Redzone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Redzone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277FDD6F275287D1001A55E7 /* NFL_RedzoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL_RedzoneApp.swift; sourceTree = "<group>"; };
@@ -30,11 +31,10 @@
 		277FDD73275287D3001A55E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277FDD76275287D3001A55E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		277FDD8027528844001A55E7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
-		277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailView.swift; sourceTree = "<group>"; };
 		277FDD8427542F95001A55E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		277FDD86275432C4001A55E7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		277FDD882754362F001A55E7 /* MatchupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupRowView.swift; sourceTree = "<group>"; };
-		27C5B720275C22C1000F0873 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		27C5B720275C22C1000F0873 /* MatchupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupDetailView.swift; sourceTree = "<group>"; };
 		27E29D09276FF25F003B630F /* NFL-Redzone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NFL-Redzone-Info.plist"; sourceTree = SOURCE_ROOT; };
 		27E29D0D27709AD7003B630F /* example-events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "example-events.json"; path = "../../../../../../Downloads/example-events.json"; sourceTree = "<group>"; };
 		27E29D0F27713FDE003B630F /* PossessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossessionView.swift; sourceTree = "<group>"; };
@@ -94,11 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				277FDD71275287D1001A55E7 /* ContentView.swift */,
-				277FDD8227542BE2001A55E7 /* ScoreDetailView.swift */,
 				277FDD86275432C4001A55E7 /* LogoView.swift */,
 				277FDD882754362F001A55E7 /* MatchupRowView.swift */,
-				27C5B720275C22C1000F0873 /* MatchDetailView.swift */,
+				27C5B720275C22C1000F0873 /* MatchupDetailView.swift */,
 				27E29D0F27713FDE003B630F /* PossessionView.swift */,
+				2731D18727737A8500146A3C /* TabMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,15 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2731D18827737A8500146A3C /* TabMenuView.swift in Sources */,
 				277FDD8527542F95001A55E7 /* Extensions.swift in Sources */,
-				27C5B721275C22C1000F0873 /* MatchDetailView.swift in Sources */,
+				27C5B721275C22C1000F0873 /* MatchupDetailView.swift in Sources */,
 				277FDD87275432C4001A55E7 /* LogoView.swift in Sources */,
 				277FDD72275287D1001A55E7 /* ContentView.swift in Sources */,
 				27E29D1027713FDE003B630F /* PossessionView.swift in Sources */,
 				274EB75527597BA000BB70EB /* Functions.swift in Sources */,
 				277FDD892754362F001A55E7 /* MatchupRowView.swift in Sources */,
 				277FDD70275287D1001A55E7 /* NFL_RedzoneApp.swift in Sources */,
-				277FDD8327542BE2001A55E7 /* ScoreDetailView.swift in Sources */,
 				277FDD8127528844001A55E7 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

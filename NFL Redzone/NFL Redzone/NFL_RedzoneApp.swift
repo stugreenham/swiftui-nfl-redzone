@@ -11,7 +11,8 @@ import SwiftUI
 struct NFL_RedzoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            TabMenuView()
         }
     }
 }

@@ -33,6 +33,7 @@ struct EventResponse: Codable, Hashable {
             var id: String
             var competitors: [Competitor]
             var situation: Situation?
+            // var headlines: [Headline]?
         }
 
             struct Competitor: Codable, Hashable {
@@ -56,9 +57,9 @@ struct EventResponse: Codable, Hashable {
                 var down: Int
                 var yardLine: Int
                 var distance: Int
-                var downDistanceText: String
-                var shortDownDistanceText: String
-                var possessionText: String
+                var downDistanceText: String?
+                var shortDownDistanceText: String?
+                var possessionText: String?
                 var isRedZone: Bool
                 var homeTimeouts: Int
                 var awayTimeouts: Int
@@ -73,6 +74,28 @@ struct EventResponse: Codable, Hashable {
                         var id: String
                     }
 
+//            struct Headline: Codable, Hashable {
+//                var description: String
+//                var video: [Video]?
+//            }
+//
+//                struct Video: Codable, Hashable {
+//                    var links: Link
+//                }
+//
+//                    struct Link: Codable, Hashable {
+//                        var mobile: Mobile
+//                    }
+//
+//                        struct Mobile: Codable, Hashable {
+//                            var source: Source
+//                        }
+//
+//                            struct Source: Codable, Hashable {
+//                                var href: String
+//                            }
+
+
         struct Status: Codable, Hashable {
             var clock: Int
             var displayClock: String
@@ -83,167 +106,5 @@ struct EventResponse: Codable, Hashable {
             struct Type: Codable, Hashable {
                 var state: String // pre, in or post
                 var description: String // final or scheduled
+                var shortDetail: String // "10:17 - 1st"
             }
-
-
-
-/*
- 
- "yardLine": 11,
- "distance": 24,
- "downDistanceText": "3rd & 24 at DEN 11",
- "shortDownDistanceText": "3rd & 24",
- "possessionText": "DEN 11",
- "isRedZone": false,
- "homeTimeouts": 0,
- "awayTimeouts": 1,
- "possession": "7"
- */
-
-
-/*
-"status": {
-    "clock": 617,
-    "displayClock": "10:17",
-    "period": 1,
-    "type": {
-    "id": "2",
-    "name": "STATUS_IN_PROGRESS",
-    "state": "in",
-    "completed": false,
-    "description": "In Progress",
-    "detail": "10:17 - 1st Quarter",
-    "shortDetail": "10:17 - 1st"
-    }
-}
- 
- "situation": {
-     "$ref": "http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/events/401326499/competitions/401326499/situation?lang=en&region=us",
-     "lastPlay": {
-     "id": "401326499433",
-     "type": {
-     "id": "8",
-     "text": "Penalty",
-     "abbreviation": "PEN"
-     },
-     "text": "(10:17) PENALTY on TB-S.Barrett, Neutral Zone Infraction, 5 yards, enforced at IND 34 - No Play.",
-     "scoreValue": 0,
-     "team": {
-     "id": "11"
-     },
-     "probability": {
-     "tiePercentage": 0,
-     "homeWinPercentage": 0.5426,
-     "awayWinPercentage": 0.45740000000000003,
-     "secondsLeft": 0
-     },
-     "drive": {
-     "description": "0 plays, 5 yards, 0:00",
-     "start": {
-     "yardLine": 34,
-     "text": "IND 34"
-     },
-     "timeElapsed": {
-     "displayValue": "0:00"
-     }
-     },
-     "start": {
-     "yardLine": 34,
-     "team": {
-     "id": "11"
-     }
-     },
-     "end": {
-     "yardLine": 39,
-     "team": {
-     "id": "11"
-     }
-     },
-     "statYardage": 5,
-     "athletesInvolved": [
-     {
-     "id": "16967",
-     "fullName": "Shaquil Barrett",
-     "displayName": "Shaquil Barrett",
-     "shortName": "S. Barrett",
-     "links": [
-     {
-     "rel": [
-     "playercard",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "stats",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/stats/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "splits",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/splits/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "gamelog",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/gamelog/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "news",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/news/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "bio",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/bio/_/id/16967/shaquil-barrett"
-     },
-     {
-     "rel": [
-     "overview",
-     "desktop",
-     "athlete"
-     ],
-     "href": "http://www.espn.com/nfl/player/_/id/16967/shaquil-barrett"
-     }
-     ],
-     "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16967.png",
-     "jersey": "58",
-     "position": "LB",
-     "team": {
-     "id": "27"
-     }
-     }
-     ]
-     },
-     "down": 1,
-     "yardLine": 39,
-     "distance": 5,
-     "downDistanceText": "1st & 5 at IND 39",
-     "shortDownDistanceText": "1st & 5",
-     "possessionText": "IND 39",
-     "isRedZone": false,
-     "homeTimeouts": 3,
-     "awayTimeouts": 3,
-     "possession": "11"
-     },
- 
- 
- */
