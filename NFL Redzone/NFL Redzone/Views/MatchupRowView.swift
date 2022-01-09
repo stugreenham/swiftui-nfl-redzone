@@ -96,7 +96,7 @@ struct MatchupRowView: View {
             .font(.footnote)
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
-            .background(RoundedCorners(tl: 0, tr: 0, bl: 8, br: 8).fill(Color("app-bg")))
+            .background(RoundedCorners(tl: 0, tr: 0, bl: 8, br: 8).fill(redzone ? Color("redzone-tray-bg") : Color("app-bg")))
             
             
             
