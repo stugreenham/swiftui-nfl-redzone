@@ -75,16 +75,13 @@ struct ContentView: View {
         
         NavigationView {
             
+            var gamesTemp = getGameFilter(gameFilter: gameFilter, gamesLive: gamesLive, gamesCompleted: gamesCompleted, gamesScheduled: gamesScheduled)
+            
+
             List {
                 
                 // Pass values into the getGameFilter function and return an array of games depending on which tab the user selects
-                ForEach(Array(
-                    getGameFilter(
-                        gameFilter: gameFilter,
-                        gamesLive: gamesLive,
-                        gamesCompleted: gamesCompleted,
-                        gamesScheduled: gamesScheduled)
-                ), id: \.self) { game in
+                ForEach(Array(gamesTemp), id: \.self) { game in
 
                     VStack(alignment: .leading) {
                                                 
@@ -120,7 +117,7 @@ struct ContentView: View {
                 .listRowSeparator(.hidden)
                 .listRowInsets(.init(top: 8, leading: 8, bottom: 8, trailing: 8))
             } //: LIST
-            .environment(\.defaultMinListRowHeight, 20) 
+            .environment(\.defaultMinListRowHeight, 20)
             .refreshable {
                 loadGameData()
             }
@@ -130,6 +127,15 @@ struct ContentView: View {
             .sheet(isPresented: $showingSheet, content: {
                 MatchupDetailView()
             })
+            .overlay(Group {
+                if gamesTemp.isEmpty {
+                    Text("No Games")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(.gray)
+                }
+            })
+                
         }
 
     }
